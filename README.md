@@ -1,63 +1,93 @@
-# Placement Management System
+# Validation Rules & Record-Triggered Flows
 
-## Project Overview
+## 📌 Overview
 
-This project demonstrates automation in Salesforce using declarative tools such as Record-Triggered Flows and Validation Rules. The objective is to automate the student placement application process while maintaining data quality and reducing manual work.
+The objective of Day 3 was to learn Salesforce declarative automation, build Record-Triggered Flows, design Validation Rules, and understand when to use Flow, Validation Rules, or Apex Triggers.
 
-## Features
+---
 
-- Automatically sets Application Date when a new application is created.
-- Sends an email notification to the Placement Officer.
-- Prevents invalid application data using Validation Rules.
-- Rejects applications with CGPA below the required minimum.
-- Automatically creates an Offer Letter record when the application status changes to **Selected**.
+## 🛠️ Business Requirements
 
-## Technologies Used
+The Placement Management System required the following automation:
 
-- Salesforce Flow Builder
-- Validation Rules
-- Apex (if applicable)
-- Trailhead Playground
+- Automatically populate the Application Date.
+- Send a confirmation email to the Placement Officer.
+- Prevent duplicate applications.
+- Reject applications with low CGPA.
+- Create an Offer Letter when the application status becomes **Selected**.
 
-## Project Structure
+---
 
-```text
-Flow Screenshots/
-Validation Rules/
-Apex/
-README.md
-```
+## 🚀 Features Implemented
 
-## Flow Automation
+### Record-Triggered Flows
 
-- Record-Triggered Flow
-- Before-Save Flow for Application Date
-- After-Save Flow for Email Notification
-- Automatic Offer Letter Creation
+- Before Save Flow to automatically populate Application Date.
+- After Save Flow to send confirmation email.
+- After Save Flow to create an Offer Letter record when Status becomes **Selected**.
 
-## Validation Rules
+### Validation Rules
 
-- CGPA Validation
-- Application Date Validation
-- Mandatory Field Validation
+- Student CGPA validation.
+- Application Date validation.
+- Mandatory field validation.
 
-## Screenshots
+---
 
-Include screenshots of:
+# Assignment Questions
 
-- Flow Canvas
-- Assignment Element
-- Email Action
-- Successful Execution
-- Validation Rules
+## 1. Which requirements did you solve using Flow?
 
-## Learning Outcomes
+I used Record-Triggered Flows to:
 
-- Built Record-Triggered Flows.
-- Implemented Validation Rules.
-- Understood when to use Flow, Validation Rules, and Apex.
-- Improved Salesforce automation skills.
+- Automatically populate the Application Date.
+- Send a confirmation email to the Placement Officer.
+- Automatically create an Offer Letter record when the application status becomes **Selected**.
 
-## Author
+---
 
-**Your Name**
+## 2. Which requirements required Validation Rules?
+
+Validation Rules were used to:
+
+- Validate Student CGPA.
+- Ensure the Application Date is not after the Job Closing Date.
+- Prevent mandatory fields from being left blank.
+
+---
+
+## 3. Which requirements still needed Apex?
+
+For this assignment, Apex was not required because all requirements were implemented using Salesforce declarative tools.
+
+Apex would be preferred only for:
+
+- Complex business logic
+- Advanced calculations
+- Bulk processing
+- External integrations
+
+---
+
+## 4. Why did you choose those solutions?
+
+I followed Salesforce's **Clicks Before Code** approach.
+
+- Validation Rules were used for data validation.
+- Record-Triggered Flows were used for automation.
+- Apex was not used because declarative tools were sufficient.
+
+---
+
+## 💡 Key Learnings
+
+- Learned the difference between Validation Rules, Flows, and Apex Triggers.
+- Built Before Save and After Save Flows.
+- Automated business processes without writing Apex.
+- Understood Salesforce automation best practices.
+
+---
+
+## 🏆 Outcome
+
+Successfully enhanced the Placement Management System using Salesforce declarative automation and gained practical experience with Flow Builder and Validation Rules.
