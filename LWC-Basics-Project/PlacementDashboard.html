@@ -1,0 +1,42 @@
+<template>
+    <lightning-card title="Placement Dashboard">
+
+        <div class="slds-p-around_medium">
+
+            <h1 class="heading">
+                Placement Management System
+            </h1>
+
+            <p><strong>Welcome:</strong> {studentName}</p>
+            <p><strong>Today's Date:</strong> {todayDate}</p>
+
+            <br/>
+
+            <div class="dashboard">
+
+                <div class="card companies">
+                    <h2>Companies</h2>
+                    <h1>{companies}</h1>
+                </div>
+
+                <div class="card jobs">
+                    <h2>Jobs</h2>
+                    <h1>{jobs}</h1>
+                </div>
+
+                <div class="card applications">
+                    <h2>Applications</h2>
+                    <h1>{applications}</h1>
+                </div>
+
+                <div class="card interviews">
+                    <h2>Interviews</h2>
+                    <h1>{interviews}</h1>
+                </div>
+
+            </div>
+
+        </div>
+
+    </lightning-card>
+</template>
