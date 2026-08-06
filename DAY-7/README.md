@@ -1,4 +1,3 @@
-
 # 🚀 Salesforce Placement Management System
 
 > **Sprint 6 – Apex Triggers & Enterprise Trigger Architecture**
@@ -262,7 +261,7 @@ Detailed notes are available in:
 
 # 👩‍💻 Author
 
-## **VIJAYA LAKSHMI SEERAM**
+## **BOLLAM PALLAVI**
 
 **Salesforce Developer | Apex | Lightning Web Components | SOQL | Enterprise Application Development**
 
