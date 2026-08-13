@@ -1,6 +1,3 @@
-
-Your PDF explicitly expects the project documentation to explain the business problem, users, major objects, Apex architecture, LWC components, testing, deployment, authentication, assumptions, and future improvements. :contentReference[oaicite:3]{index=3}
-
 ---
 
 # 3. `deployment-architecture.md`
